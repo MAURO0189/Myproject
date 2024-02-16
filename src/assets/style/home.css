@@ -1,0 +1,48 @@
+.container-home {
+  font-family: "Protest Strike", sans-serif;
+  background-color: #edecf3;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.banner-container {
+  position: relative;
+  display: inline-block;
+  text-align: center; /* Alinear el texto al centro horizontalmente */
+}
+
+.banner-container img {
+  max-width: 100%; /* Hacer que la imagen sea responsiva y se ajuste al ancho del contenedor */
+  height: auto; /* Asegurar que la altura se ajuste proporcionalmente */
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  text-align: center;
+}
+
+.title1 {
+  text-align: center;
+  color: black;
+  font-family: "Protest Strike", sans-serif;
+  transition: transform 0.3s ease, color 0.3s ease; /* Transición suave para la animación */
+}
+
+.title1:hover {
+  transform: scale(1.2); /* Expande el tamaño del título al hacer hover */
+  color: rgb(139, 119, 4); /* Cambia el color del texto al hacer hover */
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 100%; /* Ajusta el ancho de la barra lateral para pantallas grandes */
+  }
+}
+
+/* Estilos para pantallas pequeñas */

@@ -1,0 +1,27 @@
+.footer {
+  background-color: #333; /* Color de fondo del pie de página */
+  height: 100px; /* Altura del pie de página */
+  overflow: hidden; /* Para ocultar el exceso de contenido generado por la animación */
+
+  /* Agregamos la animación */
+  animation: wave 3s infinite alternate; /* Nombre de la animación, duración, repetición kk*/
+}
+
+.title2 {
+  text-align: center;
+  font-family: "Protest Strike", sans-serif;
+  color: white;
+}
+
+/* Definimos la animación llamada 'wave' */
+@keyframes wave {
+  0% {
+    transform: translateY(0); /* Comenzamos sin desplazamiento */
+  }
+  50% {
+    transform: translateY(15px); /* Movemos hacia abajo */
+  }
+  100% {
+    transform: translateY(0); /* Regresamos a la posición original */
+  }
+}
