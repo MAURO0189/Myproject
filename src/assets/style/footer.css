@@ -25,3 +25,9 @@
     transform: translateY(0); /* Regresamos a la posición original */
   }
 }
+
+@media (max-width: 767px) {
+  .footer {
+    height: auto; /* Cambia la altura del pie de página a automática para dispositivos móviles */
+  }
+}
