@@ -61,15 +61,18 @@
 
 @media (max-width: 767px) {
   .section {
-    flex-direction: column; /* Cambiar la dirección de la columna para dispositivos móviles */
+    flex-direction: column;
+    padding: 10px; /* Ajustar el padding para dispositivos móviles */
   }
 
   .about-column {
-    width: 100%; /* Hacer que las columnas ocupen todo el ancho en dispositivos móviles */
+    width: 100%;
+    margin-bottom: 20px; /* Agregar espacio entre las columnas en dispositivos móviles */
   }
 
   .profile-image {
-    max-width: 100%; /* Ajustar el tamaño máximo de la imagen de perfil para dispositivos móviles */
+    max-width: 100%;
+    border-radius: 15px; /* Reducir el radio de la esquina para la imagen de perfil en dispositivos móviles */
   }
 }
 
