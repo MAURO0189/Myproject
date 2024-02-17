@@ -13,7 +13,7 @@ function AboutOf() {
         labels: ["JavaScript", "Node.js", "React.js", "Nest.js", "MySQL"],
         datasets: [
           {
-            label: "Level Skill",
+            label: "Skill level",
             data: [80, 70, 85, 75, 70],
             backgroundColor: [
               "rgba(255, 206, 86, 1)",
