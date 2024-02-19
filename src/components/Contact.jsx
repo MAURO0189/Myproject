@@ -2,6 +2,7 @@ import React from "react";
 import "../assets/style/contac.css";
 import Header from "./Header";
 import Icons from "./Icons";
+import Footer from "./Footer";
 
 function Contact() {
   return (
@@ -19,6 +20,7 @@ function Contact() {
         </div>
         <Icons />
       </section>
+      <Footer />
     </>
   );
 }
