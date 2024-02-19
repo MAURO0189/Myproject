@@ -14,7 +14,7 @@ function AboutOf() {
         datasets: [
           {
             label: "Skill level",
-            data: [80, 70, 85, 75, 70],
+            data: [60, 70, 80, 75, 50],
             backgroundColor: [
               "rgba(255, 206, 86, 1)",
               "rgba(75, 192, 192, 1)",
