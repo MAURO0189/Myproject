@@ -3,8 +3,8 @@ import "../assets/style/cards.css";
 
 function Cards() {
   return (
-    <>
-      <div className="cards-container">
+    <div className="cards-container">
+      <div className="row">
         <div className="card">
           <img src="/img/Vdr1.jpg" alt="img1" />
           <p>
@@ -19,6 +19,8 @@ function Cards() {
             them an insurance policy.
           </p>
         </div>
+      </div>
+      <div className="row">
         <div className="card">
           <img src="/img/login.png" alt="img3" />
           <p>
@@ -33,12 +35,14 @@ function Cards() {
             NestJS and frontend in ReactJS.
           </p>
         </div>
+      </div>
+      <div className="row centered-row">
         <div className="card">
           <img src="/img/propuesta.png" alt="img5" />
           <p>Proposal for development in a work environment.</p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
