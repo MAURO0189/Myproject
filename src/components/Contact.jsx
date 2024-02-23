@@ -3,7 +3,6 @@ import "../assets/style/contac.css";
 import Header from "./Header";
 import Icons from "./Icons";
 import Footer from "./Footer";
-import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
