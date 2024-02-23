@@ -90,6 +90,10 @@ body {
   --color: rgb(84, 84, 231);
 }
 
+.whatsapp {
+  --color: rgb(9, 190, 9);
+}
+
 .icon:hover,
 .icon:hover .tooltip,
 .icon:hover .tooltip::before {

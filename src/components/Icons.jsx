@@ -43,7 +43,16 @@ function Icons() {
                 </span>
               </a>
             </li>
-            <li></li>
+            <li className="icon whatsapp">
+              <a
+                href="https://web.whatsapp.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span className="tooltip">Whatsapp</span>
+                <i className=" fab fa-brands fa-whatsapp"></i>
+              </a>
+            </li>
           </ul>
         </div>
       </section>
