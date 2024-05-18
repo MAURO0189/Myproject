@@ -9,13 +9,14 @@ function Home() {
   return (
     <>
       <Header />
-      <main className="container-home">
-        <h1 className="title1">WELCOME</h1>
-        <section id="about" className="content-card">
-          <div className="banner-container">
+      <main className="container-home container mt-5">
+        <h1 className="title1  text-center mb-2">WELCOME</h1>
+        <section id="about" className="content-card mb-5">
+          <div className="banner-container d-flex flex-column justify-content-center">
             <img
               src="/img/banner2.jpg"
               alt="banner2"
+              className="card-img"
               style={{ borderRadius: "20px" }}
             />
             <div className="banner-text">

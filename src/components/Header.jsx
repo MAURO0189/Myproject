@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <>
-      <header className="header bg-dark text-white p-3 px-5 mb-3 d-flex justify-content-between align-items-center">
+      <header className="header bg-dark text-white p-3 px-5 mb-3 mt-2 d-flex justify-content-between align-items-center">
         <div className="header__logo container">
           <Link className="navbar-brand" to="/">
             <i className="fas fa-solid fa-code"></i> MAURO DEV

@@ -39,7 +39,7 @@ function AboutOf() {
         options: {
           plugins: {
             legend: {
-              display: false, // Ocultamos la leyenda
+              display: false,
             },
           },
           scales: {
@@ -47,17 +47,17 @@ function AboutOf() {
               beginAtZero: true,
               max: 100,
               grid: {
-                display: false, // Oculta las líneas de la cuadrícula en el eje Y
+                display: false,
               },
             },
             x: {
               grid: {
-                display: false, // Oculta las líneas de la cuadrícula en el eje X
+                display: false,
               },
             },
           },
           layout: {
-            padding: 10, // Añadimos espacio alrededor del gráfico
+            padding: 10,
           },
         },
       };
@@ -69,38 +69,40 @@ function AboutOf() {
   return (
     <>
       <Header />
-      <h1 className="title1">About Me.</h1>
-      <section className="section">
-        <div className="about-column">
-          <h2>Profile</h2>
-          <p>
-            "I am Mauro Yepes, 35 years old, and I love programming. I have
-            formal education in residential electricity, automotive mechanics,
-            automotive mechatronics, and software development. I also have
-            specific courses in hybrid and electric vehicles, and in software
-            development courses such as JavaScript, Node.js, React.js, Nest.js,
-            and MySQL. Additionally, I have participated in development projects
-            and have developed small projects to enhance my skills in software
-            development."
-          </p>
-          <div>
-            <h3>Skills</h3>
-            <canvas
-              ref={chartRef}
-              id="skillsChart"
-              width="400"
-              height="200"
-            ></canvas>
+      <div className="container mt-5">
+        <h1 className="title1">About Me.</h1>
+        <section className="row mb-5 section justify-content-between">
+          <div className="col-md-6 mb-4 about-column">
+            <h2>Profile</h2>
+            <p>
+              "I am Mauro Yepes, 35 years old, and I love programming. I have
+              formal education in residential electricity, automotive mechanics,
+              automotive mechatronics, and software development. I also have
+              specific courses in hybrid and electric vehicles, and in software
+              development courses such as JavaScript, Node.js, React.js,
+              Nest.js, and MySQL. Additionally, I have participated in
+              development projects and have developed small projects to enhance
+              my skills in software development."
+            </p>
+            <div>
+              <h3>Skills</h3>
+              <canvas
+                ref={chartRef}
+                id="skillsChart"
+                width="400"
+                height="200"
+              ></canvas>
+            </div>
           </div>
-        </div>
-        <div className="about-column">
-          <img
-            src="/img/pictureProfile.jpeg"
-            alt="pictureProfile"
-            className="profile-image"
-          />
-        </div>
-      </section>
+          <div className="col-md-6 about-column d-flex justify-content-center align-items-center">
+            <img
+              src="/img/pictureProfile.jpeg"
+              alt="pictureProfile"
+              className="profile-image img-fluid"
+            />
+          </div>
+        </section>
+      </div>
       <Footer />
     </>
   );
