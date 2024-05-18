@@ -17,21 +17,17 @@
 .card {
   font-family: "Protest Strike", sans-serif;
   font-size: large;
-  width: calc(
-    50% - 10px
-  ); /* El ancho es la mitad del contenedor menos el espacio entre las cards */
-  margin-bottom: 20px; /* Agregar margen inferior para el espacio entre las cards */
+  width: calc(50% - 10px);
+  margin-bottom: 20px;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease; /* Agregar animación de transición */
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: translateY(
-    -5px
-  ); /* Efecto de levantar la card al pasar el mouse */
+  transform: translateY(-5px);
 }
 
 .card img {
@@ -45,8 +41,6 @@
 
 @media (max-width: 768px) {
   .card {
-    width: calc(
-      100% - 20px
-    ); /* En dispositivos pequeños, el ancho es el 100% del contenedor menos el padding */
+    width: calc(100% - 20px);
   }
 }
