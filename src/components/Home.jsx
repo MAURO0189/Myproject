@@ -1,31 +1,31 @@
 import React from "react";
 import Header from "./Header";
-import "../assets/style/style.css";
-import "../assets/style/home.css";
 import Icons from "./Icons";
 import Footer from "./Footer";
 
 function Home() {
   return (
-    <>
+    <div className="min-h-screen bg-gray-100">
       <Header />
-      <main className="container-home container mt-5">
-        <h1 className="title1  text-center mb-2">WELCOME</h1>
-        <section id="about" className="content-card mb-5">
-          <div className="banner-container d-flex flex-column justify-content-center">
+      <main className="container mx-auto px-4 py-8">
+        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
+          WELCOME
+        </h1>
+        <section className="max-w-4xl mx-auto mb-12">
+          <div className="relative rounded-2xl overflow-hidden shadow-xl">
             <img
               src="/img/banner2.jpg"
-              alt="banner2"
-              className="card-img"
-              style={{ borderRadius: "20px" }}
+              alt="banner"
+              className="w-full h-[400px] object-cover"
             />
-            <div className="banner-text">
-              <h2>
-                <b>HEY, I'M MAURO YEPES.</b>
+            <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center px-8">
+              <h2 className="text-3xl font-bold text-white mb-4">
+                HEY, I'M MAURO YEPES.
               </h2>
-              <p>
-                <i className="fas fa-solid fa-terminal"></i> Hi there! I am a
-                full stack developer based in the beautiful city of Medellin.
+              <p className="text-white text-lg flex items-center gap-2">
+                <i className="fas fa-terminal"></i>
+                Hi there! I am a full stack developer based in the beautiful
+                city of Medellin.
               </p>
             </div>
           </div>
@@ -33,7 +33,7 @@ function Home() {
         <Icons />
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

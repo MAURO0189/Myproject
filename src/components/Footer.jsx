@@ -1,21 +1,25 @@
 import React from "react";
-import "../assets/style/footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <h1 className="title2 ">Mauro Dev...</h1>
-      <svg
-        className="wave"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1440 320"
-      >
-        <path
-          fill="#333"
-          fillOpacity="1"
-          d="M0,32L48,53.3C96,75,192,117,288,128C384,139,480,117,576,117.3C672,117,768,139,864,176C960,213,1056,267,1152,266.7C1248,267,1344,213,1392,186.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
+    <footer className="relative bg-gray-900 text-white pt-10 pb-5 overflow-hidden">
+      <div className="container mx-auto px-6 text-center">
+        <h1 className="text-3xl font-bold mb-4">Mauro Dev...</h1>
+        <p className="text-gray-400 mb-4">
+          Building ideas into digital solutions.
+        </p>
+      </div>
+
+      {/* Animación de olas */}
+      <div className="wave-container">
+        <div className="wave wave1"></div>
+        <div className="wave wave2"></div>
+        <div className="wave wave3"></div>
+      </div>
+
+      <div className="text-gray-500 text-sm text-center mt-8">
+        © {new Date().getFullYear()} Mauro Dev. All rights reserved.
+      </div>
     </footer>
   );
 };
