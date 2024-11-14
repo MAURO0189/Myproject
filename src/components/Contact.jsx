@@ -1,32 +1,3 @@
-// import React from "react";
-// import "../assets/style/contac.css";
-// import Header from "./Header";
-// import Icons from "./Icons";
-// import Footer from "./Footer";
-
-// function Contact() {
-//   return (
-//     <>
-//       <Header />
-//       <h1 className="title1">Contact</h1>
-//       <section>
-//         <div className="contact-container">
-//           <div>
-//             <h1>Mauro Alexis Yepes Blandon</h1>
-//             <p>Email: mauroy711@gmail.com, mauroyepes73@gmail.com</p>
-//             <p>Mobile: (+57)3044380796, (+57)3054511913</p>
-//             {/* Puedes agregar más información de contacto según sea necesario */}
-//           </div>
-//         </div>
-//         <Icons />
-//       </section>
-//       <Footer />
-//     </>
-//   );
-// }
-
-// export default Contact;
-
 import React from "react";
 import Header from "./Header";
 import Icons from "./Icons";
@@ -34,7 +5,7 @@ import Footer from "./Footer";
 
 function Contact() {
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-emerald-100">
       <Header />
       <main className="container mx-auto px-4 py-8">
         <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
@@ -55,9 +26,9 @@ function Contact() {
                 <span>(+57) 304 438 0796, (+57) 305 451 1913</span>
               </p>
             </div>
+            <Icons />
           </div>
         </section>
-        <Icons />
       </main>
       <Footer />
     </div>

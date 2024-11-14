@@ -1,91 +1,3 @@
-// import React, { useState } from "react";
-// import { Link } from "react-router-dom";
-// import "../assets/style/header.css";
-
-// function Header() {
-//   const [sidebarOpen, setSidebarOpen] = useState(false);
-
-//   const toggleSidebar = () => {
-//     setSidebarOpen(!sidebarOpen);
-//   };
-
-//   const closeSidebar = () => {
-//     setSidebarOpen(false);
-//   };
-
-//   return (
-//     <>
-//       <header className="header bg-dark text-white p-3 px-5 mb-3 mt-2 d-flex justify-content-between align-items-center">
-//         <div className="header__logo container">
-//           <Link className="navbar-brand" to="/">
-//             <i className="fas fa-solid fa-code"></i> MAURO DEV
-//           </Link>
-//         </div>
-//         <button
-//           className="header__menuButton btn btn-outline-light"
-//           data-bs-toggle="collapse"
-//           data-bs-target="#navbarNav"
-//           aria-controls="navbarNav"
-//           aria-expanded="false"
-//           aria-label="Toggle navigation"
-//           onClick={toggleSidebar}
-//         >
-//           <i className="fas fa-bars"></i>
-//         </button>
-//         {sidebarOpen && (
-//           <div className="sidebar position-fixed top-0 start-0 bg-dark text-white vh-100 p-3">
-//             <ul className="nav flex-column">
-//               <li className="nav-item">
-//                 <Link to="/" className="nav-link text-white">
-//                   Home
-//                 </Link>
-//               </li>
-//               <li className="nav-item">
-//                 <i className=" fas fa-user" style={{ marginRight: "8px" }}></i>
-//                 <Link
-//                   to="/aboutOf"
-//                   style={{ textDecoration: "none", color: "inherit" }}
-//                 >
-//                   ABOUT ME
-//                 </Link>
-//               </li>
-//               <li className="nav-item">
-//                 <i
-//                   className=" fas fa-solid fa-briefcase"
-//                   style={{ marginRight: "8px" }}
-//                 ></i>
-//                 <Link
-//                   to="/projects"
-//                   style={{ textDecoration: "none", color: "inherit" }}
-//                 >
-//                   PROJECTS
-//                 </Link>
-//               </li>
-//               <li className="nav-item">
-//                 <i
-//                   className=" fas fa-regular fa-address-book"
-//                   style={{ marginRight: "8px" }}
-//                 ></i>
-//                 <Link
-//                   to="/contact"
-//                   style={{ textDecoration: "none", color: "inherit" }}
-//                 >
-//                   CONTACT
-//                 </Link>
-//               </li>
-//             </ul>
-//             <button className="sidebar__closeButton" onClick={closeSidebar}>
-//               <i className="fas fa-times"></i>
-//             </button>
-//           </div>
-//         )}
-//       </header>
-//     </>
-//   );
-// }
-
-// export default Header;
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -102,12 +14,13 @@ function Header() {
     <>
       <header className="fixed top-0 left-0 right-0  bg-gray-900 text-white p-4 z-50">
         <div className="container mx-auto flex justify-between items-center">
-          <Link
-            className="text-2xl font-bold flex no-underline items-center gap-2 hover:text-blue-400 transition-colors duration-300"
-            to="/"
-          >
-            <i className="fas fa-code"></i>
-            <span>MAURO DEV</span>
+          <Link className="group flex items-center gap-2 no-underline" to="/">
+            <div className="relative">
+              <span className="text-3xl font-black tracking-tight bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent group-hover:from-emerald-300 group-hover:to-blue-400 transition-all duration-300">
+                MY
+              </span>
+              <div className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-emerald-400 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+            </div>
           </Link>
 
           <button
@@ -152,7 +65,9 @@ function Header() {
                   onClick={toggleMenu}
                 >
                   <i className="fas fa-home"></i>
-                  <span>HOME</span>
+                  <span className="text-3xl font-black tracking-tight bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent group-hover:from-emerald-300 group-hover:to-blue-400 transition-all duration-300">
+                    HOME
+                  </span>
                 </Link>
               </li>
               <li className="transform transition-all duration-300 hover:scale-110">
@@ -162,7 +77,9 @@ function Header() {
                   onClick={toggleMenu}
                 >
                   <i className="fas fa-user"></i>
-                  <span>ABOUT ME</span>
+                  <span className="text-3xl font-black tracking-tight bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent group-hover:from-emerald-300 group-hover:to-blue-400 transition-all duration-300">
+                    ABOUT ME
+                  </span>
                 </Link>
               </li>
               <li className="transform transition-all duration-300 hover:scale-110">
@@ -172,7 +89,9 @@ function Header() {
                   onClick={toggleMenu}
                 >
                   <i className="fas fa-briefcase"></i>
-                  <span>PROJECTS</span>
+                  <span className="text-3xl font-black tracking-tight bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent group-hover:from-emerald-300 group-hover:to-blue-400 transition-all duration-300">
+                    PROJECTS
+                  </span>
                 </Link>
               </li>
               <li className="transform transition-all duration-300 hover:scale-110">
@@ -182,7 +101,9 @@ function Header() {
                   onClick={toggleMenu}
                 >
                   <i className="fas fa-address-book"></i>
-                  <span>CONTACT</span>
+                  <span className="text-3xl font-black tracking-tight bg-gradient-to-r from-emerald-400 to-blue-500 bg-clip-text text-transparent group-hover:from-emerald-300 group-hover:to-blue-400 transition-all duration-300">
+                    CONTACT
+                  </span>
                 </Link>
               </li>
             </ul>

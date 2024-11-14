@@ -5,7 +5,7 @@ function Icons() {
   return (
     <>
       <section>
-        <div>
+        <div className="text-center">
           <ul className="wrapper">
             <li className="icon instagram">
               <a

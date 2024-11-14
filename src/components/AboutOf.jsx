@@ -17,6 +17,7 @@ function AboutOf() {
     { name: "React.js", level: 80, color: "#4299E1" },
     { name: "Nest.js", level: 75, color: "#FC8181" },
     { name: "MySQL", level: 50, color: "#9F7AEA" },
+    { name: "Tailwind", level: 70, color: "#9F7AEA" },
   ];
 
   const CustomTooltip = ({ active, payload }) => {
@@ -31,7 +32,7 @@ function AboutOf() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-b from-emerald-50 to-emerald-100">
       <Header />
 
       <main className="container mx-auto px-4 py-8 mt-16">
@@ -125,6 +126,9 @@ function AboutOf() {
                   )}
                   {skill.name === "MySQL" && (
                     <i className="fas fa-database text-purple-500"></i>
+                  )}
+                  {skill.name === "Tailwind" && (
+                    <i className="fas fa-code text-indigo-400"></i>
                   )}
                 </div>
                 <h3 className="font-medium text-gray-800">{skill.name}</h3>
