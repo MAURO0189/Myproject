@@ -20,7 +20,7 @@ function Home() {
               <div className="relative">
                 <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-emerald-400/20 shadow-xl">
                   <img
-                    src="/api/placeholder/192/192"
+                    src="/img/fotoP.jpg"
                     alt="Mauro Yepes"
                     className="w-full h-full object-cover"
                   />
@@ -38,6 +38,13 @@ function Home() {
                 <p className="text-emerald-100 text-lg mb-6">
                   Fullstack Developer based in Medellín 🌟
                 </p>
+                <a
+                  href="/MauroYepes_CV.pdf"
+                  download="MauroYepes_CV.pdf"
+                  className="inline-block px-4 py-3 text-lg font-bold text-white no-underline bg-emerald-500 rounded-full shadow-md hover:bg-emerald-400 transition-all"
+                >
+                  Descargar CV
+                </a>
               </div>
             </div>
 
@@ -49,9 +56,9 @@ function Home() {
               <p className="ml-4">status: "Ready for new challenges"</p>
               <p>&#125;;</p>
             </div>
+            <Icons />
           </div>
         </section>
-        <Icons />
       </main>
       <Footer />
     </div>
